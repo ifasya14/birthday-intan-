@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Intan ❤️</title>
+
+    <meta name="description"
+        content="Website hadiah ulang tahun spesial untuk Intan">
+
+    <meta name="theme-color"
+        content="#020817">
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+<!-- =========================
+     LOADING SCREEN
+========================= -->
+
+<div id="loading-screen">
+
+    <div class="loading-bg"></div>
+
+    <div class="loading-content">
+
+        <div class="gift-icon">
+            🎁
+        </div>
+
+        <h1>
+            Preparing Your Gift
+        </h1>
+
+        <p>
+            Sedang menyiapkan hadiah spesial...
+        </p>
+
+        <div class="loading-bar">
+
+            <span></span>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- =========================
+     CANVAS
+========================= -->
+
+<canvas id="stars"></canvas>
+
+<canvas id="hearts"></canvas>
+
+<!-- =========================
+     MUSIC
+========================= -->
+
+<audio
+    id="ifasya_rasa_ini"
+    preload="auto"
+    loop>
+
+    <source
+        src="ifasya_rasa_ini.mp3"
+        type="audio/mpeg">
+
+</audio>
+
+<!-- =========================
+     SAKURA
+========================= -->
+
+<div id="sakura-container"></div>
+
+<!-- =========================
+     HERO
+========================= -->
+
+<header class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="moon"></div>
+
+    <div class="hero-content">
+
+        <span class="hero-top">
+
+            A Special Gift
+
+        </span>
+
+        <h1>
+
+            Happy Birthday
+
+        </h1>
+
+        <h2>
+
+            Intan ❤️
+
+        </h2>
+
+        <p>
+
+            Hari ini bukan hanya tentang
+            bertambahnya usia.
+
+            Tetapi tentang
+            semua doa indah
+            yang layak kamu dapatkan.
+
+        </p>
+
+        <button id="open-letter">
+
+            💌 Buka Surat
+
+        </button>
+
+    </div>
+
+    <div class="scroll-indicator">
+
+        <span>
+
+            Scroll
+
+        </span>
+
+    </div>
+
+</header>
+
+<!-- =========================
+     INTRO
+========================= -->
+
+<main>
+
+<section
+class="intro">
+
+<div class="container">
+
+<h2>
+
+Intan ❤️
+
+</h2>
+
+<p>
+
+Semoga setiap
+langkah yang kamu ambil
+selalu dipenuhi
+kebahagiaan.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =========================
+     ENVELOPE
+========================= -->
+
+<section
+id="envelope-section">
+
+<div
+id="envelope"
+class="envelope">
+
+<div class="envelope-shadow"></div>
+
+<div class="envelope-back"></div>
+
+<div class="letter-preview">
+
+<span>
+
+Untuk
+
+</span>
+
+<h3>
+
+Intan ❤️
+
+</h3>
+
+<p>
+
+Happy Birthday
+
+</p>
+
+</div>
+
+<div class="envelope-front"></div>
+
+<div class="envelope-top"></div>
+
+</div>
+
+</section>
+<!-- =========================
+     LETTER
+========================= -->
+
+<section id="letter-section" class="letter-section">
+
+    <div class="paper">
+
+        <div class="paper__header">
+
+            <span class="paper__badge">
+                💖 A Letter For You
+            </span>
+
+            <h2>
+                Happy Birthday
+            </h2>
+
+            <h1>
+                Intan ❤️
+            </h1>
+
+            <p class="paper__date">
+                22 Agustus 2026
+            </p>
+
+        </div>
+
+        <!-- Countdown -->
+
+        <div id="countdown" class="countdown">
+
+            <div class="countdown__item">
+                <span id="days">00</span>
+                <small>Hari</small>
+            </div>
+
+            <div class="countdown__item">
+                <span id="hours">00</span>
+                <small>Jam</small>
+            </div>
+
+            <div class="countdown__item">
+                <span id="minutes">00</span>
+                <small>Menit</small>
+            </div>
+
+            <div class="countdown__item">
+                <span id="seconds">00</span>
+                <small>Detik</small>
+            </div>
+
+        </div>
+
+        <!-- Isi Surat -->
+
+        <article class="letter">
+
+            <div class="typing-area">
+
+                <span id="typingText"></span>
+
+                <span class="typing-cursor">|</span>
+
+            </div>
+
+        </article>
+
+        <div class="letter-next">
+
+            <button id="nextGallery">
+
+                📷
+                Lihat Kenangan
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     PHOTO GALLERY
+========================= -->
+
+<section
+id="gallery"
+class="gallery">
+
+    <div class="gallery__header">
+
+        <span>
+        <h2>
+
+            Kenangan Bersamamu
+
+        </h2>
+
+        <p>
+
+            Tiga foto yang selama ini 
+            masih ku simpan dengan baik,
+            namun menyimpan
+            ribuan makna.
+
+        </p>
+
+    </div>
+
+    <div class="gallery__slider">
+
+        <figure
+            class="gallery__item active">
+
+            <img
+                src="img1.jpg"
+                alt="Foto 1">
+
+            <figcaption>
+
+                Senyum yang
+                selalu berhasil
+                membuat hariku
+                lebih indah.
+
+            </figcaption>
+
+        </figure>
+
+        <figure
+            class="gallery__item">
+
+            <img
+                src="img2.jpg"
+                alt="Foto 2">
+
+            <figcaption>
+
+                Terima kasih
+                atas setiap
+                momen yang
+                pernah kita lewati.
+
+            </figcaption>
+
+        </figure>
+
+        <figure
+            class="gallery__item">
+
+            <img
+                src="img3.jpg"
+                alt="Foto 3">
+
+            <figcaption>
+
+                Semoga
+                kenangan baik ini
+                selalu membawa
+                senyum.
+
+            </figcaption>
+
+        </figure>
+
+    </div>
+
+    <div class="gallery__dots">
+
+        <button class="dot active"></button>
+
+        <button class="dot"></button>
+
+        <button class="dot"></button>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     TRANSITION
+========================= -->
+
+<section
+id="transition"
+class="transition">
+
+    <div
+        class="transition__content">
+
+        <h2>
+
+            Masih ada
+            satu hal lagi...
+
+        </h2>
+
+        <p>
+
+            Sebelum surat
+            kecil ini berakhir,
+            izinkan aku
+            menyampaikan
+            doa terbaikku
+            untukmu.
+
+        </p>
+
+    </div>
+
+</section>
+<!-- ======================================================
+     FINAL WISH
+====================================================== -->
+
+<section
+id="finalWish"
+class="final">
+
+<div class="final__overlay"></div>
+
+<div class="final__content">
+
+<span class="final__label">
+
+For You
+
+</span>
+
+<h2>
+
+Happy Birthday
+
+</h2>
+
+<h1>
+
+Intan ❤️
+
+</h1>
+
+<p class="final__text">
+
+Hari ini adalah hari yang spesial,
+karena seseorang yang begitu berarti
+sedang bertambah usia.
+
+Aku berharap setiap langkahmu
+selalu dipenuhi kebahagiaan,
+kesehatan, rezeki yang berlimpah dan 
+orang-orang yang benar-benar 
+menyayangimu.
+
+Terima kasih
+karena pernah menjadi bagian
+dari perjalanan hidupku.
+
+Banyak kenangan yang mungkin
+tidak akan pernah bisa
+aku lupakan.
+
+Walaupun waktu terus berjalan,
+doaku akan selalu sama...
+
+Semoga semua impianmu tercapai.
+
+Semoga Allah SWT. selalu melindungimu.
+
+Semoga senyummu
+tidak pernah hilang.
+
+Terima kasih
+untuk semua cerita,
+tawa,
+air mata,
+dan pelajaran hidup
+yang pernah kita bagi bersama.
+
+Kalau suatu saat nanti 
+kita memang bukan lagi "kita", 
+semoga kamu tetap menjadi 
+perempuan yang paling bahagia.
+
+Dan kalau semesta masih 
+memberikan kesempatan bersama 
+sekali lagi, 
+aku berharap bisa 
+melihat senyum itu lagi... 
+senyum yang dulu selalu membuat
+hariku terasa lebih indah.
+
+Selamat bertambah usia,
+Intan ❤️.
+
+
+</p>
+
+<button
+id="showHearts"
+class="final__button">
+
+❤️ Lihat Kejutan Terakhir
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ======================================================
+     HEART FORMATION
+====================================================== -->
+
+<section
+id="heartSection"
+class="heart-section">
+
+<div class="heart-message">
+
+<h2>
+
+Happy Birthday
+
+</h2>
+
+<h1>
+
+Intan ❤️
+
+</h1>
+
+<p>
+
+Semoga bahagia
+selalu menyertaimu.
+
+</p>
+
+</div>
+
+<!-- Canvas untuk ribuan partikel hati -->
+
+<canvas
+id="heartFormationCanvas">
+</canvas>
+
+</section>
+
+<!-- ======================================================
+     FIREWORK
+====================================================== -->
+
+<section
+id="fireworkSection"
+class="firework-section">
+
+<canvas
+id="fireworkCanvas">
+</canvas>
+
+<div
+class="firework-text">
+
+<h2>
+
+🎆
+
+</h2>
+
+<h1>
+
+Make A Wish
+
+</h1>
+
+<p>
+
+Tutup mata sejenak...
+
+Lalu ucapkan
+doa terbaikmu.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ======================================================
+     CONFETTI
+====================================================== -->
+
+<div
+id="confettiContainer">
+</div>
+
+<!-- ======================================================
+     FLOATING HEART
+====================================================== -->
+
+<div
+id="floatingHeartContainer">
+</div>
+
+<!-- ======================================================
+     DARK OVERLAY
+====================================================== -->
+
+<div
+id="screenOverlay">
+</div>
+
+<!-- ======================================================
+     AUDIO CONTROL
+====================================================== -->
+
+<button
+id="musicButton"
+class="music-button">
+
+🎵
+
+</button>
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
+<footer
+class="footer">
+
+<div
+class="footer__content">
+
+<h2>
+
+Love Always,
+
+</h2>
+
+<h1>
+
+Iqbal ❤️
+
+</h1>
+
+<p>
+
+Terima kasih
+sudah meluangkan waktu
+membuka hadiah kecil ini.
+
+Semoga senyummu
+hari ini
+menjadi awal
+dari kebahagiaan
+yang tidak pernah habis.
+
+</p>
+
+</div>
+
+</footer>
+
+<!-- ======================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
