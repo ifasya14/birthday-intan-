@@ -5,7 +5,7 @@
 const loadingScreen = document.getElementById("loading-screen");
 const openButton = document.getElementById("open-letter");
 const envelope = document.getElementById("envelope");
-const music = document.getElementById("Ifasya_Rasa_Ini");
+const music = document.getElementById("ifasya_rasa_ini");
 
 const typingText = document.getElementById("typingText");
 
